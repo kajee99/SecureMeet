@@ -222,6 +222,22 @@ socket.on('user count', count => {
 })
 
 let peerConnection;
+const iceConfiguration = {}
+iceConfiguration.iceServers = [
+  {
+    urls: 'stun:stun1.l.google.com:19302'
+  },
+  {
+    urls: 'stun:stun3.l.google.com:19302'
+  },
+  {
+    urls: 'stun:stun4.l.google.com:19302'
+  }
+];
+
+// some stuff happens...
+
+localConnection = new RTCPeerConnection(iceConfiguration);
 
 function handleGetUserMediaError(e) {
     switch (e.name) {
@@ -402,7 +418,7 @@ function handleVideoAnswer(answer, sid) {
     connections[sid].setRemoteDescription(ans);
 }
 
-//Thanks to (https://github.com/miroslavpejic85) for ScreenShare Code
+
 
 screenShareButt.addEventListener('click', () => {
     screenShareToggle();
