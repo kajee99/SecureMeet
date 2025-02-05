@@ -27,7 +27,6 @@
 
 .unselectable {
   -moz-user-select: -moz-none;
-  -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
   user-select: none;
@@ -129,7 +128,7 @@ navbar .logo {
   border-radius: 0;
 }
 .main .create-join .roomcode-error {
-  border-bottom: 3px solid #d31c1c;
+  border-bottom: 3px solid rgb(211, 28, 28);
 }
 .main .create-join .joinroom {
   margin-top: 20px;
@@ -152,7 +151,8 @@ navbar .logo {
   width: 100%;
   background-color: #393e46;
   border-radius: 10px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main .video-cont .settings {
   margin: 0 auto;
@@ -276,7 +276,7 @@ navbar .logo {
   background: #f1f1f1;
 }
 .container-room ::-webkit-scrollbar-thumb {
-  background: #c5c5c5;
+  background: rgb(197, 197, 197);
 }
 .container-room ::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -300,7 +300,7 @@ navbar .logo {
   min-height: 600px;
 }
 .container-room .left-cont .whiteboard-cont #whiteboard {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
 .container-room .left-cont .whiteboard-cont .colors-cont {
@@ -415,7 +415,7 @@ navbar .logo {
   width: 30px;
   font-size: 26px;
   margin-top: 10px;
-  color: #2b2b2b;
+  color: rgb(43, 43, 43);
 }
 .container-room .left-cont .whiteboard-cont .colors-cont .eraser:hover {
   cursor: pointer;
@@ -425,7 +425,7 @@ navbar .logo {
   width: 30px;
   font-size: 26px;
   margin-top: 10px;
-  color: #2b2b2b;
+  color: rgb(43, 43, 43);
 }
 .container-room .left-cont .whiteboard-cont .colors-cont .clearboard:hover {
   cursor: pointer;
@@ -449,7 +449,8 @@ navbar .logo {
   height: 100%;
   min-height: 200px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px;
 }
 .container-room .left-cont .video-cont .video-box .nametag {
@@ -471,7 +472,7 @@ navbar .logo {
   margin-right: auto;
 }
 .container-room .left-cont .video-cont .video-box .mute-icon {
-  color: #d63434;
+  color: rgb(214, 52, 52);
   bottom: 10px;
   position: absolute;
   right: 10px;
@@ -494,7 +495,8 @@ navbar .logo {
   height: 100%;
   min-height: 200px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px;
 }
 .container-room .left-cont .video-cont-single .video-box .nametag {
@@ -516,7 +518,7 @@ navbar .logo {
   margin-right: auto;
 }
 .container-room .left-cont .video-cont-single .video-box .mute-icon {
-  color: #d63434;
+  color: rgb(214, 52, 52);
   bottom: 10px;
   position: absolute;
   right: 10px;
@@ -663,7 +665,7 @@ navbar .logo {
   background: #f1f1f1;
 }
 .container-room .right-cont ::-webkit-scrollbar-thumb {
-  background: #c5c5c5;
+  background: rgb(197, 197, 197);
 }
 .container-room .right-cont ::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -759,7 +761,7 @@ navbar .logo {
 .container-room .right-cont .chat-input-cont .chat-send:hover {
   color: #2980b9;
   cursor: pointer;
-  background-color: #f3f3f3;
+  background-color: rgb(243, 243, 243);
 }
 .container-room .right-cont .chat-input-cont .chat-send:focus {
   outline: none;
@@ -773,7 +775,7 @@ navbar .logo {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: #0f0f0f;
+  background-color: rgb(15, 15, 15);
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -796,17 +798,10 @@ navbar .logo {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #0f0f0f transparent transparent transparent;
+  border-color: rgb(15, 15, 15) transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 0.8;
-}
-
-/*# sourceMappingURL=style.css.map */
-
-
-
-
-/*bootsrap css*/
+}/*# sourceMappingURL=style.css.map */
